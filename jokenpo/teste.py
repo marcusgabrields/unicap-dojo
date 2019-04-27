@@ -1,8 +1,9 @@
 import unittest
+
 from jokenpo import jokenpo
 
 
-class testJokenpo(unittest.TestCase):
+class TestJokenpo(unittest.TestCase):
     def test_casos(self):
         casos_teste = [
             ({'input1': 'tesoura', 'input2': 'papel'}, 'Tesoura Ganha'),
