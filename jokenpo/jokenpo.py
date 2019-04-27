@@ -1,6 +1,7 @@
 jogador1 = input('1ª Jogada: ')
 jogador2 = input('2ª jogada: ')
 
+
 def jokenpo(x, y):
 
     if x == 'tesoura' and y == 'papel':
@@ -17,10 +18,10 @@ def jokenpo(x, y):
 
     elif x == 'tesoura' and y == 'pedra':
         return 'Pedra ganha'
-    
+
     elif x == 'papel' and y == 'tesoura':
         return 'Tesoura ganha'
-    
+
     else:
         return 'Empate'
 
