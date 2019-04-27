@@ -1,13 +1,10 @@
-jogador1 = input('1ª Jogada: ')
-jogador2 = input('2ª jogada: ')
-
 def jokenpo(x, y):
 
     if x == 'tesoura' and y == 'papel':
         return 'Tesoura Ganha'
 
     elif x == 'papel' and y == 'pedra':
-        return "Papel ganha"
+        return "Papel Ganha"
 
     elif x == 'pedra' and y == 'tesoura':
         return "Pedra Ganha"
@@ -16,13 +13,17 @@ def jokenpo(x, y):
         return "Papel Ganha"
 
     elif x == 'tesoura' and y == 'pedra':
-        return 'Pedra ganha'
-    
+        return 'Pedra Ganha'
+
     elif x == 'papel' and y == 'tesoura':
-        return 'Tesoura ganha'
-    
+        return 'Tesoura Ganha'
+
     else:
         return 'Empate'
 
 
-print(jokenpo(jogador1, jogador2))
+if __name__ == '__main__':
+    jogador1 = input('1ª Jogada: ')
+    jogador2 = input('2ª jogada: ')
+
+    print(jokenpo(jogador1, jogador2))
