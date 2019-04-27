@@ -1,25 +1,17 @@
 def jokenpo(x, y):
 
-    if x == 'tesoura' and y == 'papel':
-        return 'Tesoura Ganha'
+    jogada = (x, y)
 
-    elif x == 'papel' and y == 'pedra':
-        return "Papel Ganha"
-
-    elif x == 'pedra' and y == 'tesoura':
-        return "Pedra Ganha"
-
-    elif x == 'pedra' and y == 'papel':
-        return "Papel Ganha"
-
-    elif x == 'tesoura' and y == 'pedra':
+    if 'pedra' in jogada and 'tesoura' in jogada:
         return 'Pedra Ganha'
-
-    elif x == 'papel' and y == 'tesoura':
+    
+    if 'tesoura' in jogada and 'papel' in jogada:
         return 'Tesoura Ganha'
-
-    else:
-        return 'Empate'
+    
+    if 'papel' in jogada and 'pedra' in jogada:
+        return 'Papel Ganha'
+    
+    return 'Empate'
 
 
 if __name__ == '__main__':
