@@ -4,6 +4,7 @@ from jokenpo import jokenpo
 
 
 class TestJokenpo(unittest.TestCase):
+    
     def test_casos(self):
         casos_teste = [
             ({'input1': 'tesoura', 'input2': 'papel'}, 'Tesoura Ganha'),
@@ -18,8 +19,9 @@ class TestJokenpo(unittest.TestCase):
         ]
 
         for inputs, output in casos_teste:
-            resultado = jokenpo(inputs.get('input1'), inputs.get('input2'))
-            self.assertEqual(output, resultado)
+            with self.subTest():
+                resultado = jokenpo(inputs.get('input1'), inputs.get('input2'))
+                self.assertEqual(output, resultado)
 
 
 if __name__ == '__main__':
