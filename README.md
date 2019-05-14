@@ -5,4 +5,4 @@
 
 05/05/2019 - [FizzBuzz](https://github.com/marcusgabrields/unicap-dojo/tree/master/fizzbuzz)
 
-11/05/2019 - [Isogram]()
+11/05/2019 - [Isogram](https://github.com/marcusgabrields/unicap-dojo/tree/master/isograma)
